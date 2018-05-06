@@ -26,6 +26,9 @@ xkb_symbols "pre" {
     key <AE12> {[ question, question, notequal, plusminus ]};  # != and +-     on =
     key <AD01> {[ question, question, degree              ]};  # degree        on Q
     key <AB02> {[ question, question, multiply            ]};  # times         on X
+
+    # Typographics
+    key <AD04> {[ question, question, enfilledcircbullet ]};   # bullet        on R
 };
 
 
