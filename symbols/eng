@@ -9,4 +9,7 @@ xkb_symbols "neongreen" {
 
     # J and D are temporarily moved to Backspace
     key <BKSP> {[ j, J, d, D ]};
+
+    # S is temporarily moved to 4
+    key <AE04> {[ 4, dollar, s, S ]};
 };

@@ -32,4 +32,11 @@ xkb_symbols "post" {
       symbols[Group1] = [ ISO_Level3_Shift ]
     };
     include "level3(modifier_mapping)"
+
+    # Control shall be on S (it would be better to have it on F because
+    # the index finger is stronger but then Ctrl+C, Ctrl+V, etc become
+    # a pain)
+    key <AC02> { [ Control_L ] };
+    modifier_map Control { <AC02>, <LCTL>, <RCTL> };
+
 };
