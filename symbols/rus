@@ -6,6 +6,6 @@ xkb_symbols "neongreen" {
     include "ru(common)"
     include "base(neongreen)"
 
-    # О is temporarily moved to Backspace
-    key <BKSP> {[ Cyrillic_o, Cyrillic_O ]};
+    # О and В are temporarily moved to Backspace
+    key <BKSP> {[ Cyrillic_o, Cyrillic_O, Cyrillic_ve, Cyrillic_VE ]};
 };

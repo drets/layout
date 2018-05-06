@@ -6,6 +6,6 @@ xkb_symbols "neongreen" {
     include "us(basic)"
     include "base(neongreen)"
 
-    # J is temporarily moved to Backspace
-    key <BKSP> {[ j, J ]};
+    # J and D are temporarily moved to Backspace
+    key <BKSP> {[ j, J, d, D ]};
 };
