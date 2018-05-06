@@ -1,0 +1,11 @@
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "neongreen" {
+
+    name[Group1]= "Russian (neongreen)";
+
+    include "ru(common)"
+    include "base(neongreen)"
+
+    # О is temporarily moved to Backspace
+    key <BKSP> {[ Cyrillic_o, Cyrillic_O ]};
+};

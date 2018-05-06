@@ -1,0 +1,11 @@
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "neongreen" {
+
+    name[Group1]= "English (neongreen)";
+
+    include "us(basic)"
+    include "base(neongreen)"
+
+    # J is temporarily moved to Backspace
+    key <BKSP> {[ j, J ]};
+};

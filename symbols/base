@@ -1,0 +1,8 @@
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "neongreen" {
+
+    name[Group1]= "neongreen base layout changes";
+
+    # Backspace is used very often so it goes on J
+    key <AC07> {[ BackSpace, BackSpace ]};
+};
