@@ -15,10 +15,17 @@ xkb_symbols "pre" {
     key <AC08> {[ question, question, Down,  Down  ]};
     key <AC09> {[ question, question, Right, Right ]};
 
-    # Superscripts
-    key <AE01> {[ question, question, onesuperior ]};
-    key <AE02> {[ question, question, twosuperior ]};
+    # Superscripts on 123
+    key <AE01> {[ question, question, onesuperior   ]};
+    key <AE02> {[ question, question, twosuperior   ]};
     key <AE03> {[ question, question, threesuperior ]};
+
+    # Math
+    key <TLDE> {[ question, question, approxeq            ]};  # approx. eq    on ~
+    key <AE11> {[ question, question, U2212               ]};  # real minus    on -
+    key <AE12> {[ question, question, notequal, plusminus ]};  # != and +-     on =
+    key <AD01> {[ question, question, degree              ]};  # degree        on Q
+    key <AB02> {[ question, question, multiply            ]};  # times         on X
 };
 
 
