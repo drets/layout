@@ -4,7 +4,7 @@
 
 
 
-default partial hidden alphanumeric_keys modifier_keys
+partial hidden alphanumeric_keys modifier_keys
 xkb_symbols "pre" {
 
     name[Group1]= "Changes to be applied before loading the layout";
@@ -23,7 +23,7 @@ xkb_symbols "pre" {
 
 
 
-default partial hidden alphanumeric_keys modifier_keys
+partial hidden alphanumeric_keys modifier_keys
 xkb_symbols "post" {
 
     name[Group1]= "Changes to be applied on top of existing layouts";
