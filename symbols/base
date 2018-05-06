@@ -1,4 +1,4 @@
-default partial alphanumeric_keys modifier_keys
+default partial hidden alphanumeric_keys modifier_keys
 xkb_symbols "neongreen" {
 
     name[Group1]= "neongreen base layout changes";
