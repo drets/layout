@@ -1,0 +1,35 @@
+# I split the layout into "pre" and "post" phases because I haven't found
+# a way to override only third level. So, in "pre" I override first level
+# as well, but then it gets un-overridden by us/ru layouts.
+
+
+
+default partial hidden alphanumeric_keys modifier_keys
+xkb_symbols "pre" {
+
+    name[Group1]= "Changes to be applied before loading the layout";
+
+    # Arrows are on third level IJKL
+    key <AD08> {[ question, question, Up,    Up    ]};
+    key <AC07> {[ question, question, Left,  Left  ]};
+    key <AC08> {[ question, question, Down,  Down  ]};
+    key <AC09> {[ question, question, Right, Right ]};
+};
+
+
+
+default partial hidden alphanumeric_keys modifier_keys
+xkb_symbols "post" {
+
+    name[Group1]= "Changes to be applied on top of existing layouts";
+
+    # Backspace is used very often so it goes on J
+    key <AC07> {[ BackSpace, BackSpace ]};
+
+    # The third level key shall be on D
+    key <AC03> {
+      type[Group1]="ONE_LEVEL",
+      symbols[Group1] = [ ISO_Level3_Shift ]
+    };
+    include "level3(modifier_mapping)"
+};

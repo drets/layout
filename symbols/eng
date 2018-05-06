@@ -3,8 +3,9 @@ xkb_symbols "neongreen" {
 
     name[Group1]= "English (neongreen)";
 
+    include "neongreen(pre)"
     include "us(basic)"
-    include "base(neongreen)"
+    include "neongreen(post)"
 
     # J and D are temporarily moved to Backspace
     key <BKSP> {[ j, J, d, D ]};
