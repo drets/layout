@@ -39,4 +39,7 @@ xkb_symbols "post" {
     key <AC02> { [ Control_L ] };
     modifier_map Control { <AC02>, <LCTL>, <RCTL> };
 
+    # Parens and brackets are on 90
+    key <AE09> {[ 9, bracketleft,  parenleft  ]};
+    key <AE10> {[ 0, bracketright, parenright ]};
 };
